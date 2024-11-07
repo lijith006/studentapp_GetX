@@ -9,6 +9,5 @@ const fontStyles = FontWeight.bold;
 const listTilecolor = Color.fromARGB(255, 30, 52, 68);
 const studentfont = FontWeight.bold;
 const textcolor = Color.fromARGB(255, 243, 245, 242);
-// const appbarColor = Color.fromARGB(255, 140, 121, 192);
-// const appbarColor = Color.fromARGB(255, 76, 90, 121);
+
 const appbarColor = Color.fromARGB(255, 115, 134, 175);

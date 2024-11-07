@@ -125,7 +125,6 @@ class HomeScreen extends StatelessWidget {
                 return SizedBox(
                   height: 90,
                   child: Card(
-                    // color: const Color.fromARGB(255, 143, 159, 160),
                     color: const Color.fromARGB(255, 76, 90, 121),
                     child: ListTile(
                       onTap: () {

@@ -31,7 +31,7 @@ class StudentController extends GetxController {
   }
 
   Future<void> addStudentDetails(StudentModel student) async {
-    print("add fun called");
+    print("add");
     try {
       final existingStudent = studentRxList.firstWhereOrNull(
         (s) => s.registerNumber == student.registerNumber,
@@ -49,7 +49,7 @@ class StudentController extends GetxController {
       }
 
       await studentBox.add(student);
-      studentRxList.add(student);
+      //studentRxList.add(student);
 
       Get.snackbar(
         "Success",
@@ -83,7 +83,6 @@ class StudentController extends GetxController {
 
     await studentBox.put(studentRxList[index].key, studentRxList[index]);
 
-    // Notify the listeners about the update
     studentRxList.refresh();
   }
 

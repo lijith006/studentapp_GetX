@@ -50,10 +50,11 @@ class FullViewScreen extends StatelessWidget {
                         backgroundImage: updatedStudent.photo != null &&
                                 updatedStudent.photo!.isNotEmpty
                             ? FileImage(File(updatedStudent.photo!))
-                            : const AssetImage("assets/download.png")
+                            : const AssetImage("assets/student.png")
                                 as ImageProvider,
                         radius: 80,
-                        backgroundColor: const Color.fromARGB(255, 6, 1, 20),
+                        backgroundColor:
+                            const Color.fromARGB(255, 238, 236, 243),
                       ),
                     ),
                     Positioned(

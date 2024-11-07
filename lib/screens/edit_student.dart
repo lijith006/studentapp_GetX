@@ -18,7 +18,7 @@ class EditStudentDetails extends StatelessWidget {
       Get.put(PickedImageEditController());
 
   EditStudentDetails({super.key, required this.student}) {
-    // Initialize the controllers with existing student data
+    // Initialize cntrls with existing stdnt data..
     nameController.text = student.studentName ?? '';
     ageController.text = student.age ?? '';
     registerNoController.text = student.registerNumber ?? '';
@@ -187,7 +187,7 @@ class EditStudentDetails extends StatelessWidget {
       String phone, String photo) async {
     await studentController.updateStudent(key, name, age, regno, phone, photo);
     Get.back();
-    Get.snackbar('Updated', 'student details have been updated successfully',
+    Get.snackbar('Updated', 'student details  updated successfully',
         snackPosition: SnackPosition.BOTTOM, backgroundColor: Colors.green);
   }
 

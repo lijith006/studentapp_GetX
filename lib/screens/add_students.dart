@@ -181,6 +181,12 @@ class AddStudentsData extends StatelessWidget {
       );
 
       await studentControllerss.addStudentDetails(student);
+      //test cl
+      nameController.clear();
+      ageController.clear();
+      registerNoController.clear();
+      contactController.clear();
+      pickimgController.selectedImage.value = null;
     }
   }
 
